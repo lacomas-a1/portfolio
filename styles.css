@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
+/* Font Definitions */
+@font-face {
+    font-family: 'Aptos';
+    src: url('Aptos/Aptos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    /* font-family: 'Plus Jakarta Sans', sans-serif; */
+    font-family: 'Aptos', sans-serif;
     color: #333;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 .container {
@@ -38,9 +49,15 @@ body {
 }
 
 .nav-logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #2c3e50;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -54,6 +71,13 @@ body {
     color: #333;
     font-weight: 500;
     transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-menu a i {
+    font-size: 0.9rem;
 }
 
 .nav-menu a:hover {
@@ -476,6 +500,7 @@ h2 {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -487,6 +512,7 @@ h2 {
         opacity: 0;
         transform: translateX(-30px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -498,7 +524,7 @@ h2 {
     .hamburger {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -511,105 +537,105 @@ h2 {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .hero-content {
         flex-direction: column;
         text-align: center;
         gap: 2rem;
         padding: 0 15px;
     }
-    
+
     .hero-text {
         text-align: center;
     }
-    
+
     .hero-text h1 {
         font-size: 2.2rem;
     }
-    
+
     .hero-text h2 {
         font-size: 1.2rem;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
-        
+
     }
 
     /* .hero-image {
         margin-top: 100px;
     } */
-    
+
     .profile-pic {
         width: 250px;
         height: 250px;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
         gap: 0.8rem;
         width: 100%;
     }
-    
+
     .hero-buttons .btn {
         width: 100%;
         max-width: 280px;
         justify-content: center;
         text-align: center;
     }
-    
+
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .contact-info,
     .social-links {
         gap: 1.5rem;
     }
-    
+
     .contact-cta {
         margin-top: 1rem;
         padding: 1.5rem;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-    
+
     .project-card {
         margin: 0 10px;
     }
-    
+
     .container {
         padding: 0 15px;
     }
-    
+
     section {
         padding: 60px 0;
     }
-    
+
     h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
@@ -620,17 +646,17 @@ h2 {
     .hero-text h1 {
         font-size: 1.8rem;
     }
-    
+
     .profile-pic {
         width: 220px;
         height: 220px;
     }
-    
+
     .hero-buttons {
         gap: 0.6rem;
         width: 100%;
     }
-    
+
     .hero-buttons .btn {
         padding: 10px 16px;
         font-size: 0.85rem;
@@ -638,13 +664,13 @@ h2 {
         max-width: 260px;
         text-align: center;
     }
-    
+
     .contact-item {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
     }
-    
+
     .contact-item i {
         align-self: flex-start;
     }
@@ -654,12 +680,12 @@ h2 {
     .hero-text h1 {
         font-size: 1.8rem;
     }
-    
+
     .profile-pic {
         width: 180px;
         height: 180px;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
         display: none;
@@ -670,11 +696,11 @@ h2 {
     .hero-text h1 {
         font-size: 1.8rem;
     }
-    
+
     .profile-pic {
         display: none;
     }
-    
+
     .hero-text p {
         font-size: 1rem;
         display: none;

@@ -1,0 +1,23 @@
+Logo Image Instructions:
+
+1. Save your logo as 'logo.png' in this images folder
+2. Recommended specifications:
+   - Format: PNG (for transparency support)
+   - Height: 80-120px (will be scaled to 40px)
+   - Width: Proportional to height
+   - Background: Transparent preferred
+   - Style: Professional, clean design
+
+3. Alternative formats supported:
+   - logo.jpg
+   - logo.svg (best for scalability)
+
+4. If you don't have a logo yet:
+   - The navigation will show a broken image icon
+   - You can create a simple text-based logo
+   - Or use online logo generators
+
+Current setup:
+- Logo height: 40px in navigation
+- Max width: 150px
+- Responsive and mobile-friendly
