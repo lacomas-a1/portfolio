@@ -9,12 +9,12 @@
     <style>
         /* Same extra styles as nomad page */
         .case-study-container {
-            max-width: 1100px;
+            /* max-width: 1100px;// */
             margin: 2rem auto;
             background: white;
-            border-radius: 24px;
+            /* border-radius: 24px; */
             padding: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
         }
         .back-link {
             display: inline-block;
@@ -141,39 +141,41 @@
     </nav>
 
     <div class="case-study-container">
-        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
-        <h1>Kodi It Platform</h1>
+        <!-- <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a> -->
+        <div class="title" style="text-align: center; margin-top: 50px;">
+            <h1>Kodi It Platform</h1>
+        </div>
         
         <div class="carousel" id="carousel">
             <div class="carousel-images" id="carouselImages">
-                <div class="carousel-image"><img src="images/kodiit-dashboard.jpg" alt="Dashboard" onerror="this.src='https://placehold.co/800x450?text=Dashboard+Screenshot'"></div>
-                <div class="carousel-image"><img src="images/kodiit-rental.jpg" alt="Item Rental" onerror="this.src='https://placehold.co/800x450?text=Rental+Module'"></div>
-                <div class="carousel-image"><img src="images/kodiit-invoice.jpg" alt="Invoice Generation" onerror="this.src='https://placehold.co/800x450?text=Invoice+PDF'"></div>
-                <div class="carousel-image"><img src="images/kodiit-chat.jpg" alt="Chat System" onerror="this.src='https://placehold.co/800x450?text=Chat+Support'"></div>
+                <div class="carousel-image"><img src="images/kodiit-dashboard.PNG" alt="Dashboard" onerror="this.src='https://placehold.co/800x450?text=Dashboard+Screenshot'"></div>
+                <div class="carousel-image"><img src="images/kodiit-quote.PNG" alt="Item Rental" onerror="this.src='https://placehold.co/800x450?text=Rental+Module'"></div>
+                <div class="carousel-image"><img src="images/kodiit-notification.PNG" alt="Invoice Generation" onerror="this.src='https://placehold.co/800x450?text=Invoice+PDF'"></div>
+                <div class="carousel-image"><img src="images/kodiit-previllages.PNG" alt="Chat System" onerror="this.src='https://placehold.co/800x450?text=Chat+Support'"></div>
             </div>
             <button class="carousel-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
             <button class="carousel-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
             <div class="carousel-dots" id="carouselDots"></div>
         </div>
 
-        <h3>📖 Project Overview</h3>
+        <h3>Project Overview</h3>
         <p>A comprehensive web-based event planning and item rental platform designed to help businesses manage events, inventory, and client bookings efficiently. Built from scratch with scalability in mind.</p>
 
-        <h3>🎯 Problem & Solution</h3>
+        <h3>Problem & Solution</h3>
         <p><strong>Problem:</strong> Local event planners and rental businesses relied on spreadsheets and manual logs leading to double bookings, lost items, and poor customer experience.</p>
         <p><strong>Solution:</strong> Developed a centralized system with event management, item inventory, leasing module, and automated invoicing. Provides user roles (admin, vendor, customer) and real-time availability.</p>
 
-        <h3>⚙️ Features Breakdown</h3>
+        <h3>Features Breakdown</h3>
         <ul>
             <li>Event planning & scheduling</li>
             <li>Item inventory & rental management</li>
             <li>Multi-role dashboard (Admin/Vendor/Client)</li>
             <li>Invoice & PDF generation (DomPDF)</li>
             <li>Integrated chat support</li>
-            <li>Payment tracking</li>
+            <!-- <li>Payment tracking</li> -->
         </ul>
 
-        <h3>🛠️ Technologies Used</h3>
+        <h3>Technologies Used</h3>
         <div>
             <span class="tech-badge">PHP (OOP)</span>
             <span class="tech-badge">MySQL</span>
@@ -184,16 +186,16 @@
             <span class="tech-badge">HTML5/CSS3</span>
         </div>
 
-        <h3>🧩 My Role</h3>
+        <!-- <h3>My Role</h3>
         <p>Lead backend developer – designed database architecture, implemented core rental logic, built admin panels, and integrated chat system. Also handled UI/UX coordination.</p>
 
-        <h3>🚀 Challenges & Learnings</h3>
+        <h3>Challenges & Learnings</h3>
         <p><strong>Challenge:</strong> Creating a real-time availability checker for rental items without conflicts was complex. I used transaction locking and optimized queries to prevent double booking. Additionally, implementing a chat system required learning WebSockets basics; I used polling with AJAX as a fallback.</p>
-        <p><strong>What I learned:</strong> Mastered complex SQL joins and transaction management. Improved problem-solving in inventory systems and learned to balance feature delivery with performance.</p>
+        <p><strong>What I learned:</strong> Mastered complex SQL joins and transaction management. Improved problem-solving in inventory systems and learned to balance feature delivery with performance.</p> -->
 
         <div class="project-links">
             <a href="https://kodiit.africa" target="_blank" class="btn-large"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="https://github.com/lacomas-a1/kodiit-platform" target="_blank" class="btn-large github"><i class="fab fa-github"></i> GitHub Repository</a>
+            <!-- <a href="https://github.com/lacomas-a1/kodiit-platform" target="_blank" class="btn-large github"><i class="fab fa-github"></i> GitHub Repository</a> -->
         </div>
     </div>
 
