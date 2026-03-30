@@ -706,3 +706,14 @@ h2 {
         display: none;
     }
 }
+
+.btn.view-more {
+    background: #2c3e50;
+    margin-left: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn.view-more:hover {
+    background: #3498db;
+}

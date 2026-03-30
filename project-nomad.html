@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomad Tours - Case Study | James Ruwa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Extra styles for case study content */
+        .case-study-container {
+            /* max-width: 1100px; */
+            margin: 2rem auto;
+            background: white;
+            /* border-radius: 24px; */
+            padding: 2rem;
+            /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .back-link i { margin-right: 0.5rem; }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+        .carousel {
+            position: relative;
+            margin: 2rem 0;
+            border-radius: 16px;
+            overflow: hidden;
+            background: #f1f2f6;
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.4s ease;
+        }
+        .carousel-image {
+            flex: 0 0 100%;
+            text-align: center;
+        }
+        .carousel-image img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: contain;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border: none;
+            font-size: 1.8rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+        .carousel-dots {
+            text-align: center;
+            padding: 0.8rem;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #bbb;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .dot.active { background: #3498db; }
+        h3 {
+            color: #2c3e50;
+            margin-top: 1.8rem;
+            border-left: 4px solid #3498db;
+            padding-left: 0.75rem;
+        }
+        .tech-badge {
+            display: inline-block;
+            background: #ecf0f1;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .project-links {
+            margin-top: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .btn-large {
+            background: #3498db;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .btn-large.github { background: #2c3e50; }
+        @media (max-width: 768px) {
+            .case-study-container { padding: 1.2rem; margin: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ========== SAME NAVBAR AS HOMEPAGE ========== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="James Ruwa" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="index.html#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="index.html#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+                <li><a href="index.html#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CASE STUDY CONTENT -->
+    <div class="case-study-container">
+        <!-- <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a> -->
+        <h1>Nomad Tours & Experiences Platform</h1>
+        
+        <!-- Carousel -->
+        <div class="carousel" id="carousel">
+            <div class="carousel-images" id="carouselImages">
+                <div class="carousel-image"><img src="images/nomad-dashboard.jpg" alt="Dashboard" onerror="this.src='https://placehold.co/800x450?text=Dashboard+Screenshot'"></div>
+                <div class="carousel-image"><img src="images/nomad-booking.jpg" alt="Booking Page" onerror="this.src='https://placehold.co/800x450?text=Booking+Page'"></div>
+                <div class="carousel-image"><img src="images/nomad-admin.jpg" alt="Admin Panel" onerror="this.src='https://placehold.co/800x450?text=Admin+Panel'"></div>
+                <div class="carousel-image"><img src="images/nomad-packages.jpg" alt="Safari Packages" onerror="this.src='https://placehold.co/800x450?text=Safari+Packages'"></div>
+            </div>
+            <button class="carousel-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+
+        <h3>📖 Project Overview</h3>
+        <p>A premier safari tour operator platform specializing in luxury wildlife adventures across Kenya and Tanzania. The system provides dynamic content management, booking engine, and authentic cultural experience showcases.</p>
+
+        <h3>🎯 Problem & Solution</h3>
+        <p><strong>Problem:</strong> Tour operators struggled with manual booking processes, scattered content management, and lack of online presence. Customers found it hard to discover packages and book securely.</p>
+        <p><strong>Solution:</strong> Built a full-featured Laravel platform with an intuitive admin panel, real-time booking system, and SEO-optimized package pages. Integrated secure payment gateways and automated confirmation emails.</p>
+
+        <h3>⚙️ Features Breakdown</h3>
+        <ul>
+            <li>Safari package management with rich media</li>
+            <li>Online booking & reservation system</li>
+            <li>Customer dashboard & trip history</li>
+            <li>Content management for blog/destinations</li>
+            <li>Automated invoice generation</li>
+            <li>SEO friendly architecture</li>
+        </ul>
+
+        <h3>🛠️ Technologies Used</h3>
+        <div>
+            <span class="tech-badge">Laravel 10</span>
+            <span class="tech-badge">PHP 8.2</span>
+            <span class="tech-badge">MySQL</span>
+            <span class="tech-badge">Bootstrap 5</span>
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">jQuery</span>
+            <span class="tech-badge">PayPal Integration</span>
+            <span class="tech-badge">Google Maps API</span>
+        </div>
+
+        <h3>🧩 My Role</h3>
+        <p>Full-stack developer – built backend logic, database schema, booking engine, and integrated frontend templates. Handled deployment and ongoing maintenance.</p>
+
+        <h3>🚀 Challenges & Learnings</h3>
+        <p><strong>Challenge:</strong> One challenge was managing real-time availability for multiple safari packages across seasons. I implemented a dynamic availability checker with cached queries to reduce load. Another was creating a responsive admin dashboard; I used Laravel Livewire for real-time updates.</p>
+        <p><strong>What I learned:</strong> Deepened my expertise in Laravel relationships, caching strategies, and payment gateway integration. Improved my ability to write clean, maintainable code under deadlines.</p>
+
+        <div class="project-links">
+            <a href="https://wildnomads.co.ke" target="_blank" class="btn-large"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/lacomas-a1/nomad-tours" target="_blank" class="btn-large github"><i class="fab fa-github"></i> GitHub Repository</a>
+        </div>
+    </div>
+
+    <!-- ========== SAME FOOTER AS HOMEPAGE ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 James Ruwa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carousel logic
+        const carouselImages = document.getElementById('carouselImages');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('carouselDots');
+        let currentIndex = 0;
+        const totalImages = document.querySelectorAll('.carousel-image').length;
+        
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            carouselImages.style.transform = `translateX(${offset}%)`;
+            document.querySelectorAll('.dot').forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentIndex);
+            });
+        }
+        
+        function createDots() {
+            for (let i = 0; i < totalImages; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (i === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateCarousel();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        if (prevBtn && nextBtn) {
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+                updateCarousel();
+            });
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalImages;
+                updateCarousel();
+            });
+        }
+        createDots();
+    </script>
+</body>
+</html>
